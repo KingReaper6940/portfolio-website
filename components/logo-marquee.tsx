@@ -11,6 +11,7 @@ export function LogoMarquee() {
   const items = [
     { src: "/logos/perplexity.png", alt: "Perplexity AI", isPerplexity: true },
     { src: "/amd-header-logo.svg", alt: "AMD" },
+    { src: "/logos/etsy-logo.png", alt: "Etsy", isEtsy: true },
     { src: "/logos/application.svg", alt: "Application" },
     { src: "/logos/business.svg", alt: "Business" },
     { src: "/logos/company.svg", alt: "Company" },
@@ -62,9 +63,9 @@ export function LogoMarquee() {
                 <Image
                   src={item.src || "/placeholder.svg"}
                   alt={item.alt || ""}
-                  width={item.isPerplexity ? 80 : 48}
-                  height={item.isPerplexity ? 80 : 48}
-                  className={`${item.isPerplexity ? 'h-16 md:h-20' : 'h-10'} w-auto hover:scale-110 transition-transform cursor-pointer`}
+                  width={item.isPerplexity || item.isEtsy ? 80 : 48}
+                  height={item.isPerplexity || item.isEtsy ? 80 : 48}
+                  className={`${item.isPerplexity || item.isEtsy ? 'h-14 md:h-16' : 'h-10'} w-auto hover:scale-110 transition-transform cursor-pointer ${item.isEtsy ? 'rounded-lg' : ''}`}
                 />
               </div>
             ))
