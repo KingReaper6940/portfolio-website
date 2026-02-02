@@ -1,4 +1,4 @@
-import { Mail, Phone, Download } from "lucide-react"
+import { Mail, Download } from "lucide-react"
 
 export function Footer() {
   return (
@@ -19,13 +19,6 @@ export function Footer() {
             >
               <Mail className="w-5 h-5" />
               Email Me
-            </a>
-            <a
-              href="tel:+19148795242"
-              className="group flex items-center gap-2 border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-black hover:scale-105 transition-all"
-            >
-              <Phone className="w-5 h-5" />
-              Call Me
             </a>
             <a
               href="/Vrishn%20Viswa%20Resume.pdf"
