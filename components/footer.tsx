@@ -1,8 +1,41 @@
+"use client"
+
 import { Mail, Download } from "lucide-react"
+import { useState } from "react"
 
 export function Footer() {
+  const [showToast, setShowToast] = useState(false)
+
+  const copyEmailToClipboard = async (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault()
+    const email = "Vms5663@psu.edu"
+
+    try {
+      await navigator.clipboard.writeText(email)
+      setShowToast(true)
+      setTimeout(() => setShowToast(false), 3000)
+    } catch (err) {
+      console.error("Failed to copy email:", err)
+    }
+  }
+
   return (
-    <footer id="contact" className="bg-black text-white py-16 md:py-20">
+    <footer id="contact" className="bg-black text-white py-16 md:py-20 relative">
+      {/* Toast Notification */}
+      <div
+        className={`fixed top-8 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 ease-out ${showToast ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"
+          }`}
+      >
+        <div className="bg-white text-black px-6 py-4 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.3)] border-2 border-black flex items-center gap-3 animate-bounce-subtle">
+          <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
+            <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <p className="font-semibold text-sm md:text-base">Copied to clipboard! ✨</p>
+        </div>
+      </div>
+
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
@@ -13,13 +46,13 @@ export function Footer() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
-            <a
-              href="mailto:Vms5663@psu.edu"
-              className="group flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-[#6366F1] hover:text-white hover:scale-105 transition-all"
+            <button
+              onClick={copyEmailToClipboard}
+              className="group flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-[#6366F1] hover:text-white hover:scale-105 transition-all cursor-pointer"
             >
               <Mail className="w-5 h-5" />
               Email Me
-            </a>
+            </button>
             <a
               href="/Vrishn%20Viswa%20Resume.pdf"
               download="Vrishn Viswa Resume.pdf"
