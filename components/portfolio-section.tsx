@@ -1,6 +1,6 @@
 "use client"
 
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, Github, ExternalLink } from "lucide-react"
 import { useState } from "react"
 import { AllProjectsModal } from "./all-projects-modal"
 
@@ -14,8 +14,8 @@ export function PortfolioSection() {
         "Published VS Code/Cursor extension suite with 380+ downloads on Open VSX. Uses AI to refine developer prompts in real-time with 4.8+ star rating.",
       tag: "Published Product",
       bgColor: "bg-[#8B5CF6]",
-      link: "https://open-vsx.org/extension/VrishnViswaSathyamoorthy/cursor-prompt-enhancer",
-      linkText: "View on Open VSX",
+      github: "https://github.com/KingReaper6940/CursorEnhancer",
+      live: "https://open-vsx.org/extension/VrishnViswaSathyamoorthy/cursor-prompt-enhancer",
     },
     {
       title: "Aura - Mental Health Chatbot",
@@ -23,8 +23,7 @@ export function PortfolioSection() {
         "A mental health assistant chatbot built as a submission for the Gemini API Competition. Uses Gemini 3 Pro to provide empathetic, supportive conversations and mental wellness resources.",
       tag: "Gemini API Competition",
       bgColor: "bg-[#10B981]",
-      link: "https://github.com/KingReaper6940/Aura",
-      linkText: "View on GitHub",
+      github: "https://github.com/KingReaper6940/Aura",
     },
     {
       title: "AI Research Assistant",
@@ -32,8 +31,6 @@ export function PortfolioSection() {
         "Built an AI-powered research agent using Retrieval-Augmented Generation (RAG) patterns for autonomous information gathering. Processes 50+ daily news sources with 92%+ relevance accuracy using GPT-4.",
       tag: "AI/ML Project",
       bgColor: "bg-[#38BDF8]",
-      link: "https://github.com/KingReaper6940",
-      linkText: "View on GitHub",
     },
   ]
 
@@ -66,15 +63,30 @@ export function PortfolioSection() {
                   {project.description}
                 </p>
 
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 font-semibold text-black hover:gap-3 transition-all text-sm md:text-base group/link bg-black/10 hover:bg-black/20 px-5 py-3 rounded-full"
-                >
-                  {project.linkText}
-                  <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
-                </a>
+                <div className="flex flex-wrap gap-3">
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 font-semibold text-black hover:gap-3 transition-all text-sm md:text-base bg-black/10 hover:bg-black/20 px-5 py-3 rounded-full"
+                    >
+                      View on GitHub
+                      <Github className="w-4 h-4" />
+                    </a>
+                  )}
+                  {project.live && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 font-semibold text-black hover:gap-3 transition-all text-sm md:text-base bg-white/40 hover:bg-white/60 px-5 py-3 rounded-full"
+                    >
+                      Try It Live
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  )}
+                </div>
               </div>
             ))}
           </div>

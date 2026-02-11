@@ -1,6 +1,6 @@
 "use client"
 
-import { X, ExternalLink } from "lucide-react"
+import { X, ExternalLink, Github } from "lucide-react"
 import { useEffect } from "react"
 
 interface Project {
@@ -9,7 +9,8 @@ interface Project {
     badge?: string
     technologies: string[]
     bgColor: string
-    link?: string
+    github?: string
+    live?: string
 }
 
 interface AllProjectsModalProps {
@@ -25,7 +26,7 @@ export function AllProjectsModal({ isOpen, onClose }: AllProjectsModalProps) {
                 "Revolutionary app creation agency leveraging artificial intelligence to build custom mobile and web applications for content creators. Features automated app development pipelines, AI-powered design systems, and innovative revenue-sharing models. Empowers creators to monetize their content through dedicated apps without technical expertise, handling everything from development to deployment and maintenance.",
             technologies: ["Next.js", "AI/ML", "React Native", "Node.js", "OpenAI API", "Stripe API", "Firebase"],
             bgColor: "bg-[#8B5CF6]",
-            link: "https://github.com/KingReaper6940",
+            live: "https://v0-brillance-saa-s-landing-page-nine-teal.vercel.app/",
         },
         {
             title: "Aura",
@@ -34,7 +35,7 @@ export function AllProjectsModal({ isOpen, onClose }: AllProjectsModalProps) {
                 "Award-winning mental health and wellness application that won the University of West London National Science Fair. A comprehensive platform that uses advanced data visualization and machine learning to help users track their emotional patterns and provide personalized wellness insights. Features real-time mood tracking, AI-powered recommendations, and comprehensive analytics dashboard for mental health professionals.",
             technologies: ["React", "D3.js", "Firebase", "Material-UI", "Chart.js", "Machine Learning"],
             bgColor: "bg-[#10B981]",
-            link: "https://github.com/KingReaper6940/Aura",
+            github: "https://github.com/KingReaper6940/Aura",
         },
         {
             title: "Vynn AIO Content",
@@ -42,7 +43,7 @@ export function AllProjectsModal({ isOpen, onClose }: AllProjectsModalProps) {
                 "All-in-one content creation platform powered by AI that generates, optimizes, and manages digital content across multiple formats. Streamlines content workflows for creators and businesses with intelligent automation and comprehensive content management tools.",
             technologies: ["Next.js", "Python", "OpenAI API", "TypeScript", "TailwindCSS", "PostgreSQL"],
             bgColor: "bg-[#F59E0B]",
-            link: "https://github.com/KingReaper6940",
+            github: "https://github.com/KingReaper6940/Vynnn",
         },
         {
             title: "Clone Date AI",
@@ -50,7 +51,7 @@ export function AllProjectsModal({ isOpen, onClose }: AllProjectsModalProps) {
                 "Innovative AI dating application that creates personalized dating experiences through intelligent matching algorithms and conversation starters. Built with modern web technologies to revolutionize how people connect and find meaningful relationships.",
             technologies: ["React", "Node.js", "AI/ML", "MongoDB", "Express", "Socket.io"],
             bgColor: "bg-[#EF4444]",
-            link: "https://github.com/KingReaper6940",
+            github: "https://github.com/rishabhsai/clone-date-ai",
         },
         {
             title: "Briefly",
@@ -58,7 +59,7 @@ export function AllProjectsModal({ isOpen, onClose }: AllProjectsModalProps) {
                 "AI-powered summarization tool that transforms lengthy content into concise, digestible summaries. Features intelligent content analysis and customizable summary lengths for various document types, making information consumption more efficient.",
             technologies: ["Python", "NLP", "FastAPI", "React", "OpenAI API", "TensorFlow"],
             bgColor: "bg-[#38BDF8]",
-            link: "https://github.com/KingReaper6940",
+            github: "https://github.com/rishabhsai/briefly",
         },
         {
             title: "Hidaya Spirit Guide",
@@ -66,7 +67,7 @@ export function AllProjectsModal({ isOpen, onClose }: AllProjectsModalProps) {
                 "Spiritual guidance application that provides personalized insights and recommendations based on Islamic teachings. Features AI-powered content generation and community-driven spiritual resources to help users on their spiritual journey.",
             technologies: ["React Native", "Firebase", "AI/ML", "Node.js", "MongoDB"],
             bgColor: "bg-[#8B5CF6]",
-            link: "https://github.com/KingReaper6940",
+            github: "https://github.com/rishabhsai/-Hidaya-spiritguide/tree/Viswa's-Branch",
         },
         {
             title: "TrendFlip AI",
@@ -74,7 +75,6 @@ export function AllProjectsModal({ isOpen, onClose }: AllProjectsModalProps) {
                 "AI-powered e-commerce platform that analyzes market trends and consumer behavior to help businesses optimize their product strategies and maximize sales potential.",
             technologies: ["Next.js", "Python", "TensorFlow", "PostgreSQL", "OpenAI API"],
             bgColor: "bg-[#10B981]",
-            link: "https://github.com/KingReaper6940",
         },
         {
             title: "Project One",
@@ -82,7 +82,8 @@ export function AllProjectsModal({ isOpen, onClose }: AllProjectsModalProps) {
                 "A sleek and professional website built for Project One, a modern management company. Developed using Next.js and deployed on Vercel, the site delivers fast performance, responsive design, and a seamless user experience. It effectively showcases the company's services and brand with a clean, intuitive layout.",
             technologies: ["Next.js", "TypeScript", "CSS", "JavaScript", "Vercel"],
             bgColor: "bg-[#F59E0B]",
-            link: "https://github.com/KingReaper6940/project-one",
+            github: "https://github.com/KingReaper6940/project-one",
+            live: "https://project-one-j8f2-adqr6d70e-kingreaper6940s-projects.vercel.app/",
         },
         {
             title: "Veswo Bot",
@@ -90,7 +91,7 @@ export function AllProjectsModal({ isOpen, onClose }: AllProjectsModalProps) {
                 "Advanced conversational AI assistant built with natural language processing capabilities, designed to provide intelligent responses and automated customer support solutions.",
             technologies: ["Python", "NLP", "FastAPI", "React", "MongoDB"],
             bgColor: "bg-[#EF4444]",
-            link: "https://github.com/KingReaper6940/Veswo1-bot",
+            github: "https://github.com/KingReaper6940/Veswo1-bot",
         },
         {
             title: "Nittany Eats",
@@ -98,7 +99,7 @@ export function AllProjectsModal({ isOpen, onClose }: AllProjectsModalProps) {
                 "Comprehensive food delivery platform connecting Penn State students with local restaurants, featuring real-time order tracking, payment integration, and personalized recommendations.",
             technologies: ["React Native", "Node.js", "Express", "MongoDB", "Stripe API"],
             bgColor: "bg-[#38BDF8]",
-            link: "https://github.com/KingReaper6940",
+            github: "https://github.com/KingReaper6940/nittany-eats",
         },
     ]
 
@@ -172,17 +173,30 @@ export function AllProjectsModal({ isOpen, onClose }: AllProjectsModalProps) {
                                         ))}
                                     </div>
 
-                                    {project.link && (
-                                        <a
-                                            href={project.link}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="inline-flex items-center gap-2 text-black font-semibold text-sm hover:gap-3 transition-all bg-black/10 hover:bg-black/20 px-4 py-2 rounded-full border-2 border-black/30"
-                                        >
-                                            View on GitHub
-                                            <ExternalLink className="w-4 h-4" />
-                                        </a>
-                                    )}
+                                    <div className="flex flex-wrap gap-2">
+                                        {project.github && (
+                                            <a
+                                                href={project.github}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center gap-2 text-black font-semibold text-sm hover:gap-3 transition-all bg-black/10 hover:bg-black/20 px-4 py-2 rounded-full border-2 border-black/30"
+                                            >
+                                                View on GitHub
+                                                <Github className="w-4 h-4" />
+                                            </a>
+                                        )}
+                                        {project.live && (
+                                            <a
+                                                href={project.live}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center gap-2 text-black font-semibold text-sm hover:gap-3 transition-all bg-white/40 hover:bg-white/60 px-4 py-2 rounded-full border-2 border-black/30"
+                                            >
+                                                Try It Live
+                                                <ExternalLink className="w-4 h-4" />
+                                            </a>
+                                        )}
+                                    </div>
                                 </div>
                             ))}
                         </div>
