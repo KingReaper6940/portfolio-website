@@ -56,7 +56,7 @@ export function Footer() {
             <a
               href="/Vrishn%20Viswa%20Resume.pdf"
               download="Vrishn Viswa Resume.pdf"
-              className="group flex items-center gap-2 border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-black hover:scale-105 transition-all"
+              className="group flex items-center gap-2 border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-black hover:scale-105 transition-all no-underline"
             >
               <Download className="w-5 h-5" />
               Resume
@@ -69,7 +69,7 @@ export function Footer() {
               href="https://github.com/KingReaper6940"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white/60 hover:text-white hover:scale-125 transition-all"
+              className="text-white/60 hover:text-white hover:scale-125 transition-all no-underline"
               aria-label="GitHub"
             >
               <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -81,7 +81,7 @@ export function Footer() {
               href="https://www.linkedin.com/in/vrishn-viswa-sathyamoorthy-5bb930281/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white/60 hover:text-white hover:scale-125 transition-all"
+              className="text-white/60 hover:text-white hover:scale-125 transition-all no-underline"
               aria-label="LinkedIn"
             >
               <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -94,7 +94,7 @@ export function Footer() {
               href="https://x.com/vrishnviswa"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white/60 hover:text-white hover:scale-125 transition-all"
+              className="text-white/60 hover:text-white hover:scale-125 transition-all no-underline"
               aria-label="X (Twitter)"
             >
               <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -104,7 +104,7 @@ export function Footer() {
             </a>
             <a
               href="mailto:Vms5663@psu.edu"
-              className="text-white/60 hover:text-white hover:scale-125 transition-all"
+              className="text-white/60 hover:text-white hover:scale-125 transition-all no-underline"
               aria-label="Email"
             >
               <Mail className="w-6 h-6" />
