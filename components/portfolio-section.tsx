@@ -18,12 +18,21 @@ export function PortfolioSection() {
       live: "https://open-vsx.org/extension/VrishnViswaSathyamoorthy/cursor-prompt-enhancer",
     },
     {
-      title: "Aura - Mental Health Chatbot",
+      title: "Project One",
       description:
-        "A mental health assistant chatbot built as a submission for the Gemini API Competition. Uses Gemini 3 Pro to provide empathetic, supportive conversations and mental wellness resources.",
-      tag: "Gemini API Competition",
-      bgColor: "bg-[#10B981]",
-      github: "https://github.com/KingReaper6940/Aura",
+        "My first commissioned project — a sleek, professional website built for a modern management company. Developed using Next.js and deployed on Vercel, delivering fast performance, responsive design, and a seamless user experience that effectively showcases the company's services and brand.",
+      tag: "First Commissioned Project",
+      bgColor: "bg-[#F59E0B]",
+      github: "https://github.com/KingReaper6940/project-one",
+      live: "https://project-one-j8f2-adqr6d70e-kingreaper6940s-projects.vercel.app/",
+    },
+    {
+      title: "Royale Recap",
+      description:
+        "Enter your Clash Royale player tag and instantly generate a personalized stats poster. Pulls your data through the Clash Royale API, analyzes your battle history, win rates, and achievements, then creates a beautiful downloadable poster showcasing your stats.",
+      tag: "Live Product",
+      bgColor: "bg-[#EF4444]",
+      live: "https://www.royalerecap.com/",
     },
     {
       title: "AI Research Assistant",

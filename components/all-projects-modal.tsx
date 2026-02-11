@@ -29,6 +29,14 @@ export function AllProjectsModal({ isOpen, onClose }: AllProjectsModalProps) {
             live: "https://v0-brillance-saa-s-landing-page-nine-teal.vercel.app/",
         },
         {
+            title: "Royale Recap",
+            description:
+                "Enter your Clash Royale player tag and instantly generate a personalized stats poster. Pulls your data through the Clash Royale API, analyzes your battle history, win rates, trophies, and achievements, then creates a beautiful downloadable poster showcasing your complete stats.",
+            technologies: ["Next.js", "TypeScript", "Clash Royale API", "Canvas", "TailwindCSS", "Vercel"],
+            bgColor: "bg-[#EF4444]",
+            live: "https://www.royalerecap.com/",
+        },
+        {
             title: "Aura",
             badge: "🏆 Award Winner",
             description:
