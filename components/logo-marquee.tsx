@@ -7,11 +7,16 @@ export function LogoMarquee() {
   const scrollerRef = useRef<HTMLDivElement>(null)
   const scrollerInnerRef = useRef<HTMLDivElement>(null)
 
-  // Only logos - actual companies
+  // Only logos
   const items = [
     { src: "/logos/perplexity.png", alt: "Perplexity AI", isPerplexity: true },
     { src: "/amd-header-logo.svg", alt: "AMD" },
     { src: "/logos/etsy-logo.png", alt: "Etsy", isEtsy: true },
+    { src: "/logos/application.svg", alt: "Application" },
+    { src: "/logos/business.svg", alt: "Business" },
+    { src: "/logos/company.svg", alt: "Company" },
+    { src: "/logos/startup.svg", alt: "Startup" },
+    { src: "/logos/venture.svg", alt: "Venture" },
   ]
 
   useEffect(() => {
