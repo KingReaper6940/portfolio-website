@@ -30,7 +30,7 @@ A modern, professional portfolio website showcasing my work as a software develo
 Showcasing top projects including:
 - **Cursor Prompt Enhancer** - Published VS Code extension with 380+ downloads
 - **Aura** - Award-winning mental health chatbot (Gemini API Competition)
-- **AI Research Assistant** - GPT-4 powered research automation
+- **Nova Home Assistant** - In-home AI voice assistant built with React and FastAPI
 
 #### 📊 All Projects Modal
 - Interactive modal displaying **10 comprehensive projects**

@@ -21,6 +21,15 @@ interface AllProjectsModalProps {
 export function AllProjectsModal({ isOpen, onClose }: AllProjectsModalProps) {
     const allProjects: Project[] = [
         {
+            title: "Nova Home Assistant",
+            description:
+                "An in-home AI voice assistant project featuring a React + Vite waitlist landing page and a robust FastAPI Python backend for intelligent voice assistant flows.",
+            technologies: ["React", "Vite", "FastAPI", "Python", "Vercel"],
+            bgColor: "bg-[#8B5CF6]",
+            github: "https://github.com/rishabhsai/Nova-Home-Assitant",
+            live: "https://novabotlanding.vercel.app/landing",
+        },
+        {
             title: "AI App Creation Agency",
             description:
                 "Revolutionary app creation agency leveraging artificial intelligence to build custom mobile and web applications for content creators. Features automated app development pipelines, AI-powered design systems, and innovative revenue-sharing models. Empowers creators to monetize their content through dedicated apps without technical expertise, handling everything from development to deployment and maintenance.",
