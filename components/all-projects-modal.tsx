@@ -23,7 +23,7 @@ export function AllProjectsModal({ isOpen, onClose }: AllProjectsModalProps) {
         {
             title: "Nova Home Assistant",
             description:
-                "An in-home AI voice assistant project featuring a React + Vite waitlist landing page and a robust FastAPI Python backend for intelligent voice assistant flows.",
+                "A smart in-home AI voice assistant — the Compile 06 Hackathon finalist project. Nova uses OpenClaw to intelligently process voice requests, making home automation genuinely conversational and accessible. Built with a React + Vite frontend and a FastAPI Python backend.",
             technologies: ["React", "Vite", "FastAPI", "Python", "Vercel"],
             bgColor: "bg-[#8B5CF6]",
             github: "https://github.com/rishabhsai/Nova-Home-Assitant",

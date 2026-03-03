@@ -28,7 +28,7 @@ export function PortfolioSection() {
     {
       title: "Nova Home Assistant",
       description:
-        "A smart in-home AI voice assistant and waitlist platform — the Compile 06 Hackathon finalist project. Nova uses OpenClaw to intelligently process voice requests, making home automation genuinely conversational and accessible. Built with a React + Vite frontend and a FastAPI Python backend.",
+        "A smart in-home AI voice assistant — the Compile 06 Hackathon finalist project. Nova uses OpenClaw to intelligently process voice requests, making home automation genuinely conversational and accessible. Built with a React + Vite frontend and a FastAPI Python backend.",
       tag: "🏆 Compile 06 Hackathon Finalist",
       bgColor: "bg-[#38BDF8]",
       github: "https://github.com/rishabhsai/Nova-Home-Assitant",
