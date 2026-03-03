@@ -26,11 +26,14 @@ export function PortfolioSection() {
       liveText: "View Live Website",
     },
     {
-      title: "AI Research Assistant",
+      title: "Nova Home Assistant",
       description:
-        "Built an AI-powered research agent using Retrieval-Augmented Generation (RAG) patterns for autonomous information gathering. Processes 50+ daily news sources with 92%+ relevance accuracy using GPT-4.",
-      tag: "AI/ML Project",
+        "A smart in-home AI voice assistant and waitlist platform — the Compile 06 Hackathon finalist project. Nova uses OpenClaw to intelligently process voice requests, making home automation genuinely conversational and accessible. Built with a React + Vite frontend and a FastAPI Python backend.",
+      tag: "🏆 Compile 06 Hackathon Finalist",
       bgColor: "bg-[#38BDF8]",
+      github: "https://github.com/rishabhsai/Nova-Home-Assitant",
+      live: "https://novabotlanding.vercel.app/landing",
+      liveText: "View Live Website",
     },
   ]
 
