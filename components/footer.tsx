@@ -54,8 +54,8 @@ export function Footer() {
               Email Me
             </button>
             <a
-              href="/Vrishn%20Viswa%20Resume.pdf"
-              download="Vrishn Viswa Resume.pdf"
+              href="/VVS%20resume.pdf"
+              download="VVS resume.pdf"
               className="group flex items-center gap-2 border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-black hover:scale-105 transition-all no-underline"
             >
               <Download className="w-5 h-5" />

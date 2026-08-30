@@ -17,6 +17,28 @@ interface Project {
 export default function ProjectsPage() {
     const allProjects: Project[] = [
         {
+            title: "Helios.ai — Extreme Weather Early-Warning Dashboard",
+            badge: "🏆 Google Developer Hackathon",
+            description:
+                "AI-powered early-warning dashboard for SDG 13.1 (Climate Action). Features interactive Leaflet terrain map with risk-colored markers, 3-model AI consensus (Helios, NOAA HRRR, ECMWF-IFS), severity-ranked smart alerts, AI-powered reasoning modals, source verification links, time horizon toggle, and multi-city support. Uses Gemini via a secure Vercel serverless proxy.",
+            technologies: ["JavaScript", "Leaflet.js", "CSS", "Gemini AI", "Vercel Functions", "OpenRouter"],
+            bgColor: "bg-[#10B981]",
+            github: "https://github.com/KingReaper6940/Helios.ai",
+            live: "https://helios-ai-nine.vercel.app",
+            liveText: "View Live Dashboard",
+        },
+        {
+            title: "Terminal Arcade",
+            badge: "🎮 HackPSU Spring 2026",
+            description:
+                "A multiplayer game platform that runs entirely over SSH. 9 playable games including Snake, Tetris, Minesweeper, and AI-powered games by Google Gemini (Trivia, 20 Questions, Blackjack, Connect 4). Built in Go with the Charmbracelet ecosystem (Wish, Bubble Tea, Lip Gloss). Zero friction — just SSH and play.",
+            technologies: ["Go", "Charmbracelet", "SSH", "Google Gemini", "Bubble Tea", "Lip Gloss"],
+            bgColor: "bg-[#F59E0B]",
+            github: "https://github.com/rishabhsai/terminalgames",
+            live: "https://devpost.com/software/terminal-games-8onpsk",
+            liveText: "View on Devpost",
+        },
+        {
             title: "Nova Home Assistant",
             description:
                 "A smart in-home AI voice assistant — the Compile 06 Hackathon finalist project. Nova uses OpenClaw to intelligently process voice requests, making home automation genuinely conversational and accessible. Built with a React + Vite frontend and a FastAPI Python backend.",
@@ -131,7 +153,7 @@ export default function ProjectsPage() {
     ]
 
     return (
-        <div className="min-h-screen bg-white">
+        <main className="project-archive">
             {/* Header */}
             <div className="container mx-auto px-4 py-8">
                 <Link
@@ -209,6 +231,6 @@ export default function ProjectsPage() {
                     ))}
                 </div>
             </div>
-        </div>
+        </main>
     )
 }

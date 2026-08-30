@@ -6,10 +6,10 @@ export function ExperienceSection() {
   const experiences = [
     {
       period: "Jan 2026 - Present",
-      title: "Campus Activator",
+      title: "Campus Ambassador",
       company: "Perplexity AI",
       description:
-        "Hosting events and representing Perplexity at Penn State this semester. Executing targeted campus outreach to drive adoption of Perplexity's AI-powered search platform among 500+ engineering and CS students, converting 20%+ of attendees to active users.",
+        "Promoting Perplexity Computer on campus and representing Perplexity at Penn State. Leading demos, workshops, and events to showcase Perplexity's AI-native computer to 500+ engineering and CS students, driving adoption and converting 20%+ of attendees to active users.",
       icon: "/images/perplexity-icon.png",
       showIcon: true,
     },
@@ -45,7 +45,7 @@ export function ExperienceSection() {
               From founding e-commerce ventures to representing AI companies on campus, I bring a unique blend of entrepreneurial
               spirit and technical expertise to every project.
             </p>
-            <a href="/Vrishn%20Viswa%20Resume.pdf" download="Vrishn Viswa Resume.pdf">
+            <a href="/VVS%20resume.pdf" download="VVS resume.pdf">
               <Button className="bg-white text-black hover:bg-gray-100 hover:scale-105 rounded-lg py-5 px-8 md:py-[22px] md:px-[62px] text-base md:text-lg font-semibold h-auto w-full sm:w-auto sm:min-w-[240px] transition-all">
                 <Download className="w-5 h-5" />
                 Download Resume

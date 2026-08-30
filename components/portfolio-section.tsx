@@ -6,6 +6,16 @@ import Link from "next/link"
 export function PortfolioSection() {
   const projects = [
     {
+      title: "Helios.ai — Extreme Weather Early-Warning Dashboard",
+      description:
+        "Built at the Google Developer Hackathon — an AI-powered early-warning dashboard for SDG 13.1 (Climate Action). Features an interactive Leaflet terrain map with risk-colored markers, 3-model AI consensus (Helios, NOAA HRRR, ECMWF-IFS), severity-ranked smart alerts, and real-time multi-city support for State College, Pittsburgh, and Philadelphia. Uses Gemini via a secure Vercel serverless proxy.",
+      tag: "🏆 Google Developer Hackathon",
+      bgColor: "bg-[#10B981]",
+      github: "https://github.com/KingReaper6940/Helios.ai",
+      live: "https://helios-ai-nine.vercel.app",
+      liveText: "View Live Dashboard",
+    },
+    {
       title: "Cursor Prompt Enhancer",
       description:
         "Published VS Code/Cursor extension suite with 380+ downloads on Open VSX. Uses AI to refine developer prompts in real-time with 4.8+ star rating.",
@@ -16,24 +26,14 @@ export function PortfolioSection() {
       liveText: "View on Open VSX",
     },
     {
-      title: "Project One",
+      title: "Terminal Arcade",
       description:
-        "My first commissioned project — a sleek, professional website built for a modern management company. Developed using Next.js and deployed on Vercel, delivering fast performance, responsive design, and a seamless user experience that effectively showcases the company's services and brand.",
-      tag: "First Commissioned Project",
+        "Built at HackPSU Spring 2026 — a multiplayer game platform that runs entirely over SSH. 9 playable games including Snake, Tetris, Minesweeper, and AI-powered games by Google Gemini. Zero friction: no install, no browser, no signup — just SSH and play. Built in Go with the Charmbracelet ecosystem.",
+      tag: "🎮 HackPSU Spring 2026",
       bgColor: "bg-[#F59E0B]",
-      github: "https://github.com/KingReaper6940/project-one",
-      live: "https://project-one-j8f2-adqr6d70e-kingreaper6940s-projects.vercel.app/",
-      liveText: "View Live Website",
-    },
-    {
-      title: "Nova Home Assistant",
-      description:
-        "A smart in-home AI voice assistant — the Compile 06 Hackathon finalist project. Nova uses OpenClaw to intelligently process voice requests, making home automation genuinely conversational and accessible. Built with a React + Vite frontend and a FastAPI Python backend.",
-      tag: "🏆 Compile 06 Hackathon Finalist",
-      bgColor: "bg-[#38BDF8]",
-      github: "https://github.com/rishabhsai/Nova-Home-Assitant",
-      live: "https://novabotlanding.vercel.app/landing",
-      liveText: "View Live Website",
+      github: "https://github.com/rishabhsai/terminalgames",
+      live: "https://devpost.com/software/terminal-games-8onpsk",
+      liveText: "View on Devpost",
     },
   ]
 
