@@ -164,7 +164,7 @@ html { scroll-behavior: smooth; }
 .wordmark span { font-style: italic; font-weight: 400; }
 .nav-links { display: flex; align-items: center; gap: clamp(20px, 3vw, 44px); }
 
-.nav-links a, .availability, .kicker, .field-note-head, .hero-actions a, .fellowship-note > div > p:first-child, .field-stats span {
+.nav-links a, .availability, .hero-actions a, .hero-now-head span {
   font-family: SFMono-Regular, "Cascadia Code", "Roboto Mono", Consolas, monospace;
   font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
 }
@@ -174,11 +174,10 @@ html { scroll-behavior: smooth; }
 .availability { justify-self: end; display: flex; align-items: center; gap: 8px; }
 .availability span, .signal i { width: 7px; height: 7px; display: inline-block; background: #21808d; }
 
-.hero-section { max-width: 1440px; min-height: calc(100vh - 78px); margin: 0 auto; padding: clamp(46px, 7vw, 104px) 3.25vw 52px; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(390px, 0.95fr); gap: clamp(44px, 7vw, 112px); align-items: center; }
-.kicker { margin: 0 0 clamp(36px, 6vh, 72px); }
-.hero-copy h1 { margin: 0; max-width: 820px; font-family: "Iowan Old Style", Baskerville, "Times New Roman", serif; font-size: clamp(66px, 8.2vw, 132px); font-weight: 400; letter-spacing: -0.065em; line-height: 0.82; }
-.hero-copy h1 em { display: block; margin-top: 0.13em; font-weight: 400; }
-.hero-intro { max-width: 650px; margin: clamp(40px, 6vh, 76px) 0 0; font-size: clamp(18px, 1.45vw, 23px); line-height: 1.5; }
+.hero-section { max-width: 1040px; margin: 0 auto; padding: clamp(76px, 10vw, 144px) 3.25vw clamp(72px, 9vw, 120px); }
+.hero-copy { max-width: 920px; }
+.hero-copy h1 { margin: 0; font-family: "Iowan Old Style", Baskerville, "Times New Roman", serif; font-size: clamp(72px, 9.5vw, 126px); font-weight: 400; letter-spacing: -0.06em; line-height: 0.9; }
+.hero-intro { max-width: 780px; margin: clamp(30px, 4vw, 48px) 0 0; color: #363531; font-size: clamp(18px, 1.65vw, 23px); line-height: 1.55; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 38px; }
 .hero-actions a { display: inline-flex; align-items: center; gap: 9px; color: #111; text-decoration: none; padding-bottom: 7px; }
 .hero-actions a > span { width: 6px; height: 6px; background: #111; }
@@ -187,34 +186,25 @@ html { scroll-behavior: smooth; }
 .hero-socials a { display: inline-flex; align-items: center; gap: 4px; color: #4f4d48; font-family: SFMono-Regular, "Cascadia Code", "Roboto Mono", Consolas, monospace; font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-decoration: none; text-transform: uppercase; }
 .hero-socials a:hover { color: #21808d; }
 
-.hero-field-note { background: #fffefa; border: 1px solid #111; box-shadow: 9px 9px 0 #111; }
-.field-note-head { min-height: 46px; padding: 0 14px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(17, 17, 17, 0.22); }
-.signal { display: flex; align-items: center; gap: 8px; color: #21808d; }
-.field-note-image { position: relative; height: clamp(180px, 24vh, 280px); overflow: hidden; border-bottom: 1px solid #111; }
-.field-note-image::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, transparent, rgba(33, 128, 141, 0.2)); mix-blend-mode: multiply; pointer-events: none; }
-.field-note-image > span { position: absolute; right: 12px; bottom: 10px; z-index: 2; padding: 5px 7px; color: #fbfaf6; background: #111; font-family: SFMono-Regular, "Cascadia Code", monospace; font-size: 9px; letter-spacing: 0.08em; }
-.fellowship-note { display: grid; grid-template-columns: 54px 1fr; gap: 18px; padding: clamp(22px, 3vw, 34px); }
+.hero-now { margin-top: clamp(64px, 8vw, 96px); padding: 26px 0 30px; border-top: 1px solid rgba(17, 17, 17, 0.28); border-bottom: 1px solid rgba(17, 17, 17, 0.28); }
+.hero-now-head { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; }
+.hero-now-head h2 { margin: 0; font-family: "Iowan Old Style", Baskerville, "Times New Roman", serif; font-size: 31px; font-weight: 700; letter-spacing: -0.035em; }
+.hero-now-head span { color: #4f4d48; }
+.hero-now-body { max-width: 790px; margin-top: 28px; display: grid; grid-template-columns: 54px 1fr; gap: 20px; align-items: start; }
 .fellowship-mark { width: 54px; height: 54px; display: grid; place-items: center; overflow: hidden; background: #091717; }
 .fellowship-mark img { display: block; width: 100%; height: 100%; }
-.fellowship-note p { margin: 0; }
-.fellowship-note h2 { margin: 7px 0 12px; font-family: "Iowan Old Style", Baskerville, "Times New Roman", serif; font-size: clamp(30px, 3vw, 46px); font-weight: 400; letter-spacing: -0.04em; line-height: 0.96; }
-.fellowship-description { color: #4f4d48; font-size: 14px; line-height: 1.5; }
-.fellowship-note a { width: fit-content; margin-top: 16px; display: flex; align-items: center; gap: 5px; color: #111; font-size: 13px; font-weight: 700; text-decoration: none; }
-.field-stats { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid #111; }
-.field-stats div { padding: 15px; display: flex; flex-direction: column; gap: 5px; }
-.field-stats div + div { border-left: 1px solid rgba(17, 17, 17, 0.24); }
-.field-stats strong { font-family: "Iowan Old Style", Baskerville, "Times New Roman", serif; font-size: 28px; font-weight: 400; }
-.field-stats span { color: #4f4d48; font-size: 8px; }
+.hero-now-body p { max-width: 670px; margin: 0; color: #4f4d48; font-size: 15px; line-height: 1.55; }
+.hero-now-body h3 { margin: 0 0 10px; font-family: "Iowan Old Style", Baskerville, "Times New Roman", serif; font-size: clamp(28px, 3.2vw, 40px); font-weight: 400; letter-spacing: -0.04em; line-height: 1; }
+.hero-now-body a { width: fit-content; margin-top: 15px; display: flex; align-items: center; gap: 5px; color: #111; font-size: 12px; font-weight: 700; text-decoration: none; }
 
-@media (max-width: 980px) { .hero-section { grid-template-columns: 1fr; } .hero-field-note { max-width: 700px; } }
 @media (max-width: 720px) {
   .site-header { padding: 0 18px; }
   .site-nav { grid-template-columns: 1fr auto; height: 64px; }
   .nav-links { display: none; }
-  .hero-section { padding: 46px 18px 64px; }
-  .hero-copy h1 { font-size: clamp(58px, 19vw, 86px); }
+  .hero-section { padding: 64px 18px 72px; }
+  .hero-copy h1 { font-size: clamp(64px, 20vw, 88px); }
   .hero-intro { font-size: 17px; }
-  .fellowship-note { grid-template-columns: 1fr; }
+  .hero-now-body { grid-template-columns: 46px 1fr; gap: 15px; }
   .fellowship-mark { width: 46px; height: 46px; }
 }
 
@@ -371,7 +361,7 @@ html { scroll-behavior: smooth; }
 @media (prefers-reduced-motion: no-preference) {
   .site-shell a:not([aria-label$="on GitHub"])::after,
   .project-archive a::after { transition: transform 420ms cubic-bezier(0.22, 1, 0.36, 1); }
-  .hero-field-note { animation: field-note-in 700ms cubic-bezier(.2,.75,.2,1) both; }
+  .hero-now { animation: field-note-in 700ms cubic-bezier(.2,.75,.2,1) both; }
   .hero-copy { animation: hero-copy-in 650ms cubic-bezier(.2,.75,.2,1) both; }
 }
 

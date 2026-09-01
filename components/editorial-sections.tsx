@@ -192,7 +192,7 @@ export function EditorialSections() {
         </Link>
       </section>
 
-      <section id="about" className="editorial-section evidence-section">
+      <section id="evidence" className="editorial-section evidence-section">
         <div className="evidence-heading">
           <p className="section-index">03 / OPERATING EVIDENCE</p>
           <h2>The numbers should <em>say something.</em></h2>

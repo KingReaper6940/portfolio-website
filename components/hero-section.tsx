@@ -5,14 +5,11 @@ export function HeroSection() {
   return (
     <section id="top" className="hero-section">
       <div className="hero-copy">
-        <p className="kicker">AI systems · product engineering · field deployment</p>
-        <h1>
-          I build the system.
-          <em>Then make it useful.</em>
-        </h1>
+        <h1>Vrishn Viswa</h1>
         <p className="hero-intro">
-          I&apos;m Vrishn Viswa — a computer science student, AI builder, and operator
-          working between Penn State and IIT Madras.
+          I&apos;m an AI builder and dual-degree student based in State College. I work
+          across agent infrastructure, developer tools, and the last mile between a
+          capable model and a product people can actually use.
         </p>
         <div className="hero-actions">
           <a href="#portfolio"><span aria-hidden="true" /> See selected work <ArrowDownRight size={16} /></a>
@@ -26,32 +23,23 @@ export function HeroSection() {
         </nav>
       </div>
 
-      <aside className="hero-field-note" aria-label="Current field note">
-        <div className="field-note-head">
-          <span>FIELD NOTE / 001</span>
-          <span className="signal"><i aria-hidden="true" /> SELECTED</span>
+      <aside className="hero-now" aria-label="What I am doing now">
+        <div className="hero-now-head">
+          <h2>Now</h2>
+          <span>STATE COLLEGE, PA</span>
         </div>
-        <div className="field-note-image">
-          <Image src="/images/vrishn-hero.jpg" alt="Vrishn Viswa" fill priority sizes="(max-width: 800px) 100vw, 42vw" className="object-cover grayscale" />
-          <span>UNIVERSITY PARK / PA</span>
-        </div>
-        <div className="fellowship-note">
+        <div className="hero-now-body">
           <div className="fellowship-mark" aria-hidden="true">
             <Image src="/logos/perplexity-symbol-color-dark.svg" alt="" width={54} height={54} />
           </div>
           <div>
-            <p>Perplexity AI · Inaugural pilot cohort</p>
-            <h2>AI Expert Advisor Fellow</h2>
-            <p className="fellowship-description">
-              Selected to deploy Perplexity Computer with real small businesses — turning operational pain points into durable AI workflows, then teaching owners to run them independently.
+            <h3>AI Expert Advisor Fellow</h3>
+            <p>
+              Deploying Perplexity Computer with local businesses and turning real
+              operational bottlenecks into durable AI workflows.
             </p>
             <a href="https://fellows.pplx.app/" target="_blank" rel="noreferrer">View the fellowship <ArrowUpRight size={15} /></a>
           </div>
-        </div>
-        <div className="field-stats">
-          <div><strong>06</strong><span>WEEKS / FIELD</span></div>
-          <div><strong>1–3</strong><span>BUSINESSES</span></div>
-          <div><strong>2026</strong><span>PILOT COHORT</span></div>
         </div>
       </aside>
     </section>
